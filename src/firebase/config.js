@@ -4,13 +4,13 @@ import 'firebase/firestore'
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyCTfx2H_BezQLxUo6UbhhcX47fv5l-mqfE",
-  authDomain: "firegram-a7042.firebaseapp.com",
-  databaseURL: "https://firegram-a7042.firebaseio.com",
-  projectId: "firegram-a7042",
-  storageBucket: "firegram-a7042.appspot.com",
-  messagingSenderId: "579303698084",
-  appId: "1:579303698084:web:82eae8d375f22a91698031"
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  authDomain: process.env.DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 }
 
 firebase.initializeApp(firebaseConfig)
